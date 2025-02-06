@@ -1,12 +1,17 @@
-# Packet-sniffing-with-Wireshark
-Packet sniffing with Wireshark allows you to capture and analyze network traffic in real time. Here's a step-by-step guide to get started
+# Wireshark Installation Guide for Linux
 
-To install Wireshark on Linux, follow these steps:
+Wireshark allows you to capture and analyze network traffic in real-time. Follow the steps below to install it on your Linux distribution.
 
-To install Wireshark on Linux, follow these steps:
+## Installation Steps
 
-<table></table>
-sudo apt update && sudo apt upgrade -y   # For Debian/Ubuntu-based systems
-sudo dnf update -y                      # For Fedora
-sudo pacman -Syu                        # For Arch Linux
-</table>
+| **Step**   | **Command (Debian/Ubuntu)**             | **Command (Fedora)**        | **Command (Arch Linux)**      |
+|------------|--------------------------------------|----------------------------|------------------------------|
+| **Update System** | `sudo apt update && sudo apt upgrade -y` | `sudo dnf update -y` | `sudo pacman -Syu` |
+| **Install Wireshark** | `sudo apt install wireshark -y` | `sudo dnf install wireshark -y` | `sudo pacman -S wireshark-gtk` |
+| **Allow Non-Root Users** | `sudo usermod -aG wireshark $USER` | `sudo usermod -aG wireshark $USER` | `sudo usermod -aG wireshark $USER` |
+| **Verify Installation** | `wireshark --version` | `wireshark --version` | `wireshark --version` |
+
+## Running Wireshark
+To start Wireshark, use:
+```bash
+wireshark
