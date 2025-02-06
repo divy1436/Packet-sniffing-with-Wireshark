@@ -5,6 +5,8 @@ To install Wireshark on Linux, follow these steps:
 
 To install Wireshark on Linux, follow these steps:
 
+<table></table>
 sudo apt update && sudo apt upgrade -y   # For Debian/Ubuntu-based systems
 sudo dnf update -y                      # For Fedora
 sudo pacman -Syu                        # For Arch Linux
+</table>
